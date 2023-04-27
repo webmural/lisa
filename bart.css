@@ -1,0 +1,98 @@
+html {
+  font-family: sans-serif;
+  font-size: max(5ex, 3vw + 2vh);
+}
+
+body {
+  margin: auto;
+  overflow-wrap: anywhere;
+}
+
+menu {
+  border-radius: 20% 0;
+  contain: layout;
+  display: flex;
+  flex-flow: column;
+  list-style: circle;
+  line-height: 1.618;
+  margin: auto;
+  padding: 3ch;
+  text-transform: uppercase;
+}
+
+@media (orientation: portrait) {
+  menu {
+    list-style: none;
+    padding-inline-start: 2ch;
+    padding-inline-end: 1ch;
+  }
+}
+
+footer {
+  align-items: center;
+  contain: style;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.618em;
+  padding-block: 1ex;
+}
+
+h1 {
+  align-items: center;
+  border-radius: 0 20%;
+  contain: style;
+  display: flex;
+  flex-flow: column;
+  font: bold 2em sans-serif;
+  margin: 0;
+}
+
+h1 a {
+  border-radius: 10%;
+  border: 1ex dashed;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  padding: 1ex;
+}
+
+blockquote {
+  contain: strict;
+  font-weight: 600;
+  line-height: 1.618;
+  min-height: 100vh;
+  text-shadow:
+    0 1em 0,
+    0 2em 0,
+    0 3em 0,
+    0 4em 0,
+    0 5em 0,
+    0 6em 0,
+    0 7em 0,
+    0 8em 0,
+    0 9em 0;
+}
+
+b { text-shadow: -1vw -1vh 0 }
+em { font-style: unset }
+s { text-decoration-style: double }
+
+:any-link {
+  text-decoration: dashed overline;
+}
+
+:hover {
+  text-decoration: dashed underline;
+}
+
+:focus {
+  outline: .236ex double;
+  text-decoration-style: double;
+  text-shadow: none;
+}
+
+.chalk:focus-within a {
+  text-shadow: none;
+}
